@@ -1,0 +1,10 @@
+.banner {
+    margin-top: 44px;
+}
+.banner__card {
+    width: 160px;
+    height: 92px;
+    border-radius: 16px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
