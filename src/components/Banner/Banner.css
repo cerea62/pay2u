@@ -5,6 +5,10 @@
     width: 160px;
     height: 92px;
     border-radius: 16px;
-    border: 1px solid red;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.08);
+}
+.banner__image {
+    width: 100%;
+    object-fit: cover;
 }

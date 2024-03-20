@@ -6,14 +6,16 @@ import Services from "../Services/Services";
 
 
 export default function Main() {
-    const [isSigned, setIsSigned] = useState(false);
+    const [isSigned, setIsSigned] = useState(true);
 
     return (
         <>
             <main className="main">
                 <h1 className="main__title">Подписки</h1>
-                <Banner />
-                <Subscriptions isSigned={isSigned}/>
+                <Banner 
+                isSigned={isSigned}/>
+                <Subscriptions 
+                isSigned={isSigned}/>
                 <Services />
             </main>
         </>

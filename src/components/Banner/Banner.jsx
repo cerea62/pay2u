@@ -3,7 +3,8 @@ import './Banner';
 import PlannedCosts from "../PlannedCosts/PlannedCosts";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import { cardsOfSignedUser, cardsOfUnsignedUser } from '../../utils/cards'
+console.log(cardsOfUnsignedUser)
 const responsive = {
     mobile: {
         breakpoint: { max: 700, min: 0 },
@@ -11,34 +12,24 @@ const responsive = {
     }
 };
 
-const banners = [
-    {
-        id: 1,
-    },
-    {
-        id: 2,
-    },
-    {
-        id: 3,
-    },
-    {
-        id: 4,
-    }
-]
-export default function Banner() {
-
+export default function Banner({ isSigned }) {
+    const cards = isSigned ? (cardsOfSignedUser) : cardsOfUnsignedUser
     return (
         <>
             <section className="banner">
                 <Carousel responsive={responsive}
                     swipeable={true} >
-                    {banners.map(banner => (
-                        <div key={banner.id} className="banner__card">
+                    {cards.map(item => (
+                        <div key={item.id} className="banner__card">
+                            <img className="banner__image" src={item.image} alt="#" />
                         </div>
                     ))}
-                </Carousel>
 
-                <PlannedCosts />
+                </Carousel>
+                {isSigned ? (
+                    <PlannedCosts />
+                ) : (null)
+                }
             </section>
         </>
 

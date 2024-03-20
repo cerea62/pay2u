@@ -19,8 +19,8 @@ function App() {
           element={<Main />}>
           <Route path='category'
             element={<Category />} />
-          <Route path='all' exact
-            element={<ServicesCardList />} />
+          {/* <Route path='all' exact
+            element={<ServicesCardList />} /> */}
         </Route>
         <Route path='calendar'
           element={<Calendar />} />
