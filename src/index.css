@@ -11,5 +11,9 @@
 @import url(../src/components/PlannedCosts/PlannedCosts.css);
 @import url(../src/components/ServicesCard/ServicesCard.css);
 @import url(../src/components/ServicesCardList/ServicesCardList.css);
+@import url(../src/components/Category/Category.css);
+@import url(../src/components/Category/CategoryCard/CategoryCard.css);
+@import url(../src/components/Calendar/Calendar.css);
+@import url(../src/components/ButtonSubmit/ButtonSubmit.css);
 
 

@@ -1,13 +1,10 @@
 import React from 'react';
 import './ButtonNavigation.css'
+import { Link } from 'react-router-dom';
 
-function ButtonNavigation() {
-    function handleClick() {
-
-    }
-
+function ButtonNavigation({ path }) {
     return (
-        <button className="button-navigation" onClick={handleClick}></button>
+        <Link className="button-navigation" to={path}></Link>
     )
 }
 
