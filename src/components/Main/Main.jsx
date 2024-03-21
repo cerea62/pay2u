@@ -6,7 +6,7 @@ import Services from "../Services/Services";
 
 
 export default function Main() {
-    const [isSigned, setIsSigned] = useState(true);
+    const [isSigned, setIsSigned] = useState(true); //заглушка для пользователя с подписками и без
 
     return (
         <>

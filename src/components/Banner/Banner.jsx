@@ -4,14 +4,14 @@ import PlannedCosts from "../PlannedCosts/PlannedCosts";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { cardsOfSignedUser, cardsOfUnsignedUser } from '../../utils/cards'
-console.log(cardsOfUnsignedUser)
+
 const responsive = {
     mobile: {
         breakpoint: { max: 700, min: 0 },
         items: 2
     }
 };
-
+//не удается добавить тени в слайдер
 export default function Banner({ isSigned }) {
     const cards = isSigned ? (cardsOfSignedUser) : cardsOfUnsignedUser
     return (

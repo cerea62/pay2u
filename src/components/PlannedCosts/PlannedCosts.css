@@ -4,6 +4,8 @@
     border-radius: 12px;
     background-color: #E6F6F8;
     padding: 12px;
+    box-shadow: 0px 8px 32px 0px rgba(43, 45, 51, 0.08);
+
 }
 
 .planned-costs__cost {
