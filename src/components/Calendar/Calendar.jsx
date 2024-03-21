@@ -4,8 +4,7 @@ import PlannedCosts from '../PlannedCosts/PlannedCosts';
 import calendar from '../../images/calendar.jpg'
 import Holidays from '../Holidays/Holidays';
 import Statistics from '../Statistics/Statistics';
-
-
+import Payment from '../Payment/Payment';
 
 function Calendar(props) {
     return (
@@ -19,6 +18,7 @@ function Calendar(props) {
                 </div>
                 <Holidays />
                 <Statistics />
+                <Payment />
             </section>
         </>
 

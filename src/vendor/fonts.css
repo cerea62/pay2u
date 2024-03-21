@@ -20,3 +20,11 @@
   font-display: swap;
   src: url('../utils/fonts/SFProText-Medium.ttf') format("ttf");
 }
+@font-face {
+  font-family: 'Inter Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../utils/fonts/Inter-Regular.woff') format("woff"),
+  url('../utils/fonts/Inter-Regular.woff2') format("woff2");
+}
